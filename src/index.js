@@ -51,7 +51,7 @@ const Home = () => {
             </Text>
             <TextInput
                 placeholder="Phone Number"
-                onChangeText={setPhoneNumber}
+                onChangeText={newValue => setPhoneNumber(newValue)}
                 keyboardType="phone-pad"
                 autoCompleteType="tel"
                 style={styles.textInput}
